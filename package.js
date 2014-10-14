@@ -1,7 +1,7 @@
 Package.describe({
   name: "gwendall:body-events",
   summary: "Get Templace.body.events() working",
-  version: "0.1.0",
+  version: "0.1.1",
   git: "https://github.com/gwendall/meteor-body-events"
 });
 
@@ -9,11 +9,14 @@ Package.on_use(function (api, where) {
 
   api.use([
     "templating@1.0.7",
-    "jquery@1.0.0"
+    "jquery@1.0.0",
+    "underscore"
   ], "client");
 
   api.add_files([
     "lib.js"
   ], "client");
+
+  api.export("bodyEvents", "client");
 
 });
