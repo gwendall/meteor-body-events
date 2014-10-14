@@ -9,14 +9,11 @@ Package.on_use(function (api, where) {
 
   api.use([
     "templating@1.0.7",
-    "jquery@1.0.0",
-    "underscore"
+    "jquery@1.0.0"
   ], "client");
 
   api.add_files([
     "lib.js"
   ], "client");
-
-  api.export("bodyEvents", "client");
 
 });
