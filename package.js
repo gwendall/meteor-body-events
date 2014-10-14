@@ -8,8 +8,8 @@ Package.describe({
 Package.on_use(function (api, where) {
 
   api.use([
-    "templating",
-    "jquery"
+    "templating@1.0.7",
+    "jquery@1.0.0"
   ], "client");
 
   api.add_files([
