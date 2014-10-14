@@ -1,7 +1,7 @@
 Package.describe({
   name: "gwendall:body-events",
   summary: "Get Templace.body.events() working",
-  version: "0.1.1",
+  version: "0.1.2",
   git: "https://github.com/gwendall/meteor-body-events"
 });
 
