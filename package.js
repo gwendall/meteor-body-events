@@ -9,8 +9,7 @@ Package.on_use(function (api, where) {
 
   api.use([
     "templating@1.0.7",
-    "jquery@1.0.0",
-    "mrt:underscore-string-latest@2.3.3"
+    "jquery@1.0.0"
   ], "client");
 
   api.add_files([
