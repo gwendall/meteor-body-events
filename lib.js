@@ -4,7 +4,7 @@ Template.body.events = function(events) {
       var handler = events[eventMap];
       var maps = eventMap.split(",");
       maps.forEach(function(map) {
-        map = _s.trim(map);
+        map = $.trim(map);
         var split = map.split(" ");
         var event = split[0];
         if (split.length === 1) {
