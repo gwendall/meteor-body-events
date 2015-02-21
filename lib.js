@@ -15,9 +15,9 @@ Template.body.events = function(events) {
         } else {
           var selector = split.slice(1).join(" ");
           $(document).delegate(selector, event, function(e) {
-            var el = $(e.currentTarget).get(0);
-            var data = Blaze.getData(el);
-            handler.apply(this, [e, data]);
+            var data = Blaze.getData(e.target);
+            var templateInstance = Template.body.view && Template.body.view.templateInstance;
+            handler.apply(data, [e, templateInstance && templateInstance()]);
           });
         }
       });
