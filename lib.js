@@ -17,7 +17,7 @@ Template.body.events = function(events) {
           $(document).delegate(selector, event, function(e) {
             var el = $(e.currentTarget).get(0);
             var data = Blaze.getData(el);
-            var tpl = Meteor._get(Blaze.getView(el), "_templateInstance") || {};
+            var tpl = (Blaze.getView(el) && Meteor._get(Blaze.getView(el), "_templateInstance")) || {};
             handler.apply(this, [e, data, tpl]);
           });
         }
