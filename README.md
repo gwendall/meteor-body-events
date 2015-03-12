@@ -16,14 +16,10 @@ Methods
 
 ``` javascript
 Template.body.events({
-  "click .btn": function(e, data) {
+  "click .btn": function(e, data, tpl) {
     // e -> jquery event
     // data -> Blaze data context of the DOM element triggering the event handler
+    // tpl -> the parent template instance for the target element
   }
 })
 ```
-
-To do
------
-
-Return [e, tpl:Template.instance] instead of [e, data] - like for any Template.*.events handler
